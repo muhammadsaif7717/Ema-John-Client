@@ -29,7 +29,7 @@ const Shop = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}`)
+        fetch(`https://ema-john-server-ph.vercel.app/products?page=${currentPage}&size=${itemsPerPage}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [currentPage,itemsPerPage]);
