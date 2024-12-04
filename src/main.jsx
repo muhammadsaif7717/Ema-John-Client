@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         element: <Inventory></Inventory>
       },
       {
-        path:'checkout',
+        path: 'checkout',
         element: <Checkout></Checkout>
       },
       {

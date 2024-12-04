@@ -32,7 +32,7 @@ const Shop = () => {
         fetch(`https://ema-john-server-ph.vercel.app/products?page=${currentPage}&size=${itemsPerPage}`)
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [currentPage,itemsPerPage]);
+    }, [currentPage, itemsPerPage]);
 
     useEffect(() => {
         const storedCart = getShoppingCart();
